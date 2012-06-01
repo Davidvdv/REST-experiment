@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				
+				$.getJSON('reviews/12345.json', function(data) {
+					console.log(data);
+				});
+				
+				$.get('reviews/12345.xml', function(data) {
+					console.log(data);
+				}, 'xml');
+			});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
