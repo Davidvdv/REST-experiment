@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^reviews/([0-9]{5}).(json|xml|html)$ review.php?id=$1&type=$2
